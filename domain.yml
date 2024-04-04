@@ -1,0 +1,39 @@
+version: '3.1'
+intents:
+- greet
+- get_movie_selection
+- get_movie_ratings
+- get_movie_released
+- get_movie_genre
+- get_movie_director
+- get_movie_actors
+- get_movie_plot
+- get_movie_poster
+entities:
+- genre
+- movie_ratings
+- movie_released
+- movie_genre
+- movie_director
+- movie_actors
+- movie_plot
+- movie_poster
+responses:
+  utter_greet:
+  - text: "Hi, I'm your virtual movie bot and I have knowledge of the top 20 movies of 2023, what would you like to know?"
+  utter_goodbye:
+  - text: 'Bye'
+actions:
+- utter_greet
+- action_recommend_movies
+- action_show_all_movies
+- action_show_movie_ratings
+- action_show_movie_released
+- action_show_movie_genre
+- action_show_movie_director
+- action_show_movie_actors
+- action_show_movie_plot
+- action_show_movie_poster
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

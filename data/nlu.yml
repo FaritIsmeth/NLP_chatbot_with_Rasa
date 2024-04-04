@@ -1,0 +1,167 @@
+version: "3.1"
+nlu:
+
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+- intent: get_movie_selection
+  examples: |
+    - please show all the movies
+    - show me all the movies
+    - what are the movies?
+- intent: get_movie_ratings
+  examples: |
+    - what's the movie ratings for [Barbie](movie_ratings)?
+    - tell me the movie ratings for [Past Lives](movie_ratings)
+    - movie ratings for [Poor Things](movie_ratings)
+    - [The Holdovers](movie_ratings) movie ratings
+    - please tell me the movie ratings for [Killers of the Flower Moon](movie_ratings)
+    - what's the movie ratings for [About Dry Grasses](movie_ratings)?
+    - can i know what's the movie ratings for [Anatomy of a Fall](movie_ratings)?
+    - show me the movie ratings for [The Promised Land](movie_ratings)
+    - [Fallen Leaves](movie_ratings) movie ratings
+    - [Perfect Days](movie_ratings) movie ratings
+    - show the movie ratings for [The Taste of Things](movie_ratings)
+    - let's see the movie ratings for [Spider-Man: Across the Spider-Verse](movie_ratings)
+    - i wanna see the movie ratings for [The Zone of Interest](movie_ratings)
+    - let's have a look at the movie ratings for [American Fiction](movie_ratings)
+    - i'm curious to see the movie ratings for [The Boy and the Heron](movie_ratings)
+    - show me the movie ratings for [Dungeons & Dragons: Honor Among Thieves](movie_ratings)
+    - [Mission: Impossible - Dead Reckoning Part One](movie_ratings) movie ratings
+    - i want to see the movie ratings for [John Wick: Chapter 4](movie_ratings)
+    - let me see the movie ratings for [Guardians of the Galaxy Vol. 3](movie_ratings)
+    - can you tell me what's the movie ratings for [Godzilla Minus One](movie_ratings)?
+- intent: get_movie_released
+  examples: |
+    - when was [Barbie](movie_released) released?
+    - tell me the released date for [Past Lives](movie_released)
+    - released date for [Poor Things](movie_released)
+    - [The Holdovers](movie_released) released date
+    - please tell me the released date for [Killers of the Flower Moon](movie_released)
+    - what's the released date for [About Dry Grasses](movie_released)?
+    - can i know what's the released date for [Anatomy of a Fall](movie_released)?
+    - show me the released date for [The Promised Land](movie_released)
+    - [Fallen Leaves](movie_released) released date
+    - [Perfect Days](movie_released) released date
+    - show the released date for [The Taste of Things](movie_released)
+    - let's see the released date for [Spider-Man: Across the Spider-Verse](movie_released)
+    - i wanna see the released date for [The Zone of Interest](movie_released)
+    - let's have a look at the released date for [American Fiction](movie_released)
+    - i'm curious to see the released date for [The Boy and the Heron](movie_released)
+    - show me the released date for [Dungeons & Dragons: Honor Among Thieves](movie_released)
+    - [Mission: Impossible - Dead Reckoning Part One](movie_released) released date
+    - i want to see the released date for [John Wick: Chapter 4](movie_released)
+    - let me see the released date for [Guardians of the Galaxy Vol. 3](movie_released)
+    - can you tell me what's the released date for [Godzilla Minus One](movie_released)?
+- intent: get_movie_genre
+  examples: |
+    - what's the genre for [Barbie](movie_genre)?
+    - tell me the genre for [Past Lives](movie_genre)
+    - genre for [Poor Things](movie_genre)
+    - [The Holdovers](movie_genre) genre
+    - please tell me the genre for [Killers of the Flower Moon](movie_genre)
+    - what's the genre for [About Dry Grasses](movie_genre)?
+    - can i know what's the genre for [Anatomy of a Fall](movie_genre)?
+    - show me the genre for [The Promised Land](movie_genre)
+    - [Fallen Leaves](movie_genre) genre
+    - [Perfect Days](movie_genre) genre
+    - show the genre for [The Taste of Things](movie_genre)
+    - let's see the genre for [Spider-Man: Across the Spider-Verse](movie_genre)
+    - i wanna see the genre for [The Zone of Interest](movie_genre)
+    - let's have a look at the genre for [American Fiction](movie_genre)
+    - i'm curious to see the genre for [The Boy and the Heron](movie_genre)
+    - show me the genre for [Dungeons & Dragons: Honor Among Thieves](movie_genre)
+    - [Mission: Impossible - Dead Reckoning Part One](movie_genre) genre
+    - i want to see the genre for [John Wick: Chapter 4](movie_genre)
+    - let me see the genre for [Guardians of the Galaxy Vol. 3](movie_genre)
+    - can you tell me what's the genre for [Godzilla Minus One](movie_genre)?
+- intent: get_movie_director
+  examples: |
+    - who's the director for [Barbie](movie_director)?
+    - tell me the director for [Past Lives](movie_director)
+    - director for [Poor Things](movie_director)
+    - [The Holdovers](movie_director) director
+    - please tell me the director for [Killers of the Flower Moon](movie_director)
+    - who is the director for [About Dry Grasses](movie_director)?
+    - can i know who is the director for [Anatomy of a Fall](movie_director)?
+    - show me the director for [The Promised Land](movie_director)
+    - [Fallen Leaves](movie_director) director
+    - [Perfect Days](movie_director) director
+    - show the director for [The Taste of Things](movie_director)
+    - let's see the director for [Spider-Man: Across the Spider-Verse](movie_director)
+    - i wanna see the director for [The Zone of Interest](movie_director)
+    - let's have a look at the director for [American Fiction](movie_director)
+    - i'm curious to see the director for [The Boy and the Heron](movie_director)
+    - show me the director for [Dungeons & Dragons: Honor Among Thieves](movie_director)
+    - [Mission: Impossible - Dead Reckoning Part One](movie_director) director
+    - i want to see the director for [John Wick: Chapter 4](movie_director)
+    - let me see the director for [Guardians of the Galaxy Vol. 3](movie_director)
+    - can you tell me who's the director for [Godzilla Minus One](movie_director)?
+- intent: get_movie_actors
+  examples: |
+    - who are the actors for [Barbie](movie_actors)?
+    - tell me the actors for [Past Lives](movie_actors)
+    - actors for [Poor Things](movie_actors)
+    - [The Holdovers](movie_actors) actors
+    - please tell me the actors for [Killers of the Flower Moon](movie_actors)
+    - who are the actors for [About Dry Grasses](movie_actors)?
+    - can i know who are the actors for [Anatomy of a Fall](movie_actors)?
+    - show me the actors for [The Promised Land](movie_actors)
+    - [Fallen Leaves](movie_actors) actors
+    - [Perfect Days](movie_actors) actors
+    - show the actors for [The Taste of Things](movie_actors)
+    - let's see the actors for [Spider-Man: Across the Spider-Verse](movie_actors)
+    - i wanna see the actors for [The Zone of Interest](movie_actors)
+    - let's have a look at the actors for [American Fiction](movie_actors)
+    - i'm curious to see the actors for [The Boy and the Heron](movie_actors)
+    - show me the actors for [Dungeons & Dragons: Honor Among Thieves](movie_actors)
+    - [Mission: Impossible - Dead Reckoning Part One](movie_actors) actors
+    - i want to see the actors for [John Wick: Chapter 4](movie_actors)
+    - let me see the actors for [Guardians of the Galaxy Vol. 3](movie_actors)
+    - can you tell me who are the actors for [Godzilla Minus One](movie_actors)?
+- intent: get_movie_plot
+  examples: |
+    - what's the plot for [Barbie](movie_plot)?
+    - tell me the plot for [Past Lives](movie_plot)
+    - plot for [Poor Things](movie_plot)
+    - [The Holdovers](movie_plot) plot
+    - please tell me the plot for [Killers of the Flower Moon](movie_plot)
+    - what is the plot for [About Dry Grasses](movie_plot)?
+    - can i know what is the plot for [Anatomy of a Fall](movie_plot)?
+    - show me the plot for [The Promised Land](movie_plot)
+    - [Fallen Leaves](movie_plot) plot
+    - [Perfect Days](movie_plot) plot
+    - show the plot for [The Taste of Things](movie_plot)
+    - let's see the plot for [Spider-Man: Across the Spider-Verse](movie_plot)
+    - i wanna see the plot for [The Zone of Interest](movie_plot)
+    - let's have a look at the plot for [American Fiction](movie_plot)
+    - i'm curious to see the plot for [The Boy and the Heron](movie_plot)
+    - show me the plot for [Dungeons & Dragons: Honor Among Thieves](movie_plot)
+    - [Mission: Impossible - Dead Reckoning Part One](movie_plot) plot
+    - i want to see the plot for [John Wick: Chapter 4](movie_plot)
+    - let me see the plot for [Guardians of the Galaxy Vol. 3](movie_plot)
+    - can you tell me the plot for [Godzilla Minus One](movie_plot)?
+- intent: get_movie_poster
+  examples: |
+    - movie poster for [Barbie](movie_poster)
+    - show me the movie poster for [Past Lives](movie_poster)
+    - movie poster for [Poor Things](movie_poster)
+    - [The Holdovers](movie_poster) movie poster
+    - please show me the movie poster for [Killers of the Flower Moon](movie_poster)
+    - what is the movie poster for [About Dry Grasses](movie_poster)?
+    - can i know what is the movie poster for [Anatomy of a Fall](movie_poster)?
+    - show me the movie poster for [The Promised Land](movie_poster)
+    - [Fallen Leaves](movie_poster) movie poster
+    - [Perfect Days](movie_poster) movie poster
+    - show the movie poster for [The Taste of Things](movie_poster)
+    - let's see the movie poster for [Spider-Man: Across the Spider-Verse](movie_poster)
+    - i wanna see the movie poster for [The Zone of Interest](movie_poster)
+    - let's have a look at the movie poster for [American Fiction](movie_poster)
+    - i'm curious to see the movie poster for [The Boy and the Heron](movie_poster)
+    - show me the movie poster for [Dungeons & Dragons: Honor Among Thieves](movie_poster)
+    - [Mission: Impossible - Dead Reckoning Part One](movie_poster) movie poster
+    - i want to see the movie poster for [John Wick: Chapter 4](movie_poster)
+    - let me see the movie poster for [Guardians of the Galaxy Vol. 3](movie_poster)
+    - can you show me the movie poster for [Godzilla Minus One](movie_poster)?
